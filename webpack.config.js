@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV && (process.env.NODE_ENV.trim() === 'production');
 
@@ -26,31 +26,30 @@ module.exports = {
       filename: 'index.html',
       template: path.resolve(__dirname, './src/index.html'),
     }),
-    // new MiniCssExtractPlugin({
-    //   filename: "css/[name].css",
-    //   chunkFilename: "[id].css"
-    // }),
-    // new CopyWebpackPlugin({
-    //   patterns: [
-    //     { from: "./src/images", to: "images" },
-    //     { from: "./src/react/mockData", to: "mockData" },
-    //   ]
-    // }),
+    new MiniCssExtractPlugin({
+      filename: "css/[name].css",
+      chunkFilename: "[id].css"
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "./src/images", to: "images" },
+      ]
+    }),
   ],
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: [".mjs", ".js", ".mts", ".ts", ".jsx", ".tsx", ".json"],
   },
   module: {
     rules: [
-      // {
-      //   test: /\.scss$/,
-      //   use: [{
-      //     loader: MiniCssExtractPlugin.loader,
-      //     options: {
-      //       publicPath: '../'
-      //     }
-      //   }, 'css-loader', 'sass-loader']
-      // },
+      {
+        test: /\.scss$/,
+        use: [{
+          loader: MiniCssExtractPlugin.loader,
+          options: {
+            publicPath: '../'
+          }
+        }, 'css-loader', 'sass-loader']
+      },
       {
         test: /\.(png|svg|jpe?g|gif|eot|ttf|woff)$/,
         type: 'asset/resource'
