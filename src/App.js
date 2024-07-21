@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client';
 
 import "./styles/App.scss";
 
-import Main from "./cv/Main";
+import CV from "./cv/CV";
 
 const container = document.getElementById('app');
 const root = createRoot(container);
 
 
-root.render(<Main/>);
+root.render(<CV/>);

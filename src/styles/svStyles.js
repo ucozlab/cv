@@ -7,8 +7,13 @@ Font.register({
 });
 
 Font.register({
-  family: 'Rubik',
+  family: 'RubikBold',
   src: 'https://fonts.gstatic.com/s/rubik/v3/D4HihERG27s-BJrQ4dvkbw.ttf'
+});
+
+Font.register({
+  family: 'Rubik',
+  src: 'https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFUkU1Z4Y.woff2'
 });
 
 Font.register({
@@ -21,14 +26,17 @@ const Colors = {
   blue: "#008cff",
   darkBlue: "#22405C",
   darkBlue2: "#182D40",
+  light: "#bdbdbd",
 }
 
 
 export default StyleSheet.create({
+  /**** General ****/
   ...helpers,
   body: {
     fontFamily: 'Inter',
     color: Colors.main,
+    fontWeight: 400,
   },
   page: {
     width: "100%",
@@ -37,61 +45,48 @@ export default StyleSheet.create({
     flexDirection: "row",
     height: "100%",
   },
-  main: {
-    padding: "30px",
+  cv: {
+    padding: "30",
     width: "65%",
     flex: "0 0 65%",
     backgroundColor: "white",
   },
+  /**** Header ****/
+  header: {
+    marginBottom: 24,
+  },
   name: {
     fontSize: 24,
-    fontFamily: 'Rubik',
+    fontFamily: 'RubikBold',
     textAlign: 'left',
   },
   position: {
-    fontSize: 12,
+    fontSize: 13,
     textAlign: 'left',
     color: Colors.blue,
-    marginBottom: 40,
+    marginBottom: 5,
   },
-  subtitle: {
-    fontSize: 18,
-    margin: 12,
-    fontFamily: 'Rubik'
+  contacts: {
   },
-  text: {
-    margin: 12,
-    fontSize: 14,
-    textAlign: 'justify',
-    fontFamily: 'Times-Roman'
+  contact: {
+    marginRight: 10,
   },
-  header: {
-    fontSize: 12,
-    marginBottom: 20,
-    textAlign: 'center',
-    color: 'grey',
+  contactLast: {
+    marginRight: 0,
   },
-  pageNumber: {
-    position: 'absolute',
-    fontSize: 12,
-    bottom: 30,
-    left: 0,
-    right: 0,
-    textAlign: 'center',
-    color: 'grey',
-  },
-  iconPhone: {
-    fontVariationSettings: "'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24",
-    color: "red",
-    fontSize: 14,
-  },
-  contacts: {},
-  contact: {},
   contactIcon: {
-    width: 24,
-    height: 24,
+    width: 14,
+    height: 14,
+    display: "flex",
+    marginRight: 2,
   },
-  contactText: {},
+  contactText: {
+    fontFamily: 'Rubik',
+    // fontWeight: 400,
+    fontSize: 9,
+    color: Colors.main,
+    textDecoration: "none",
+  },
   /**** Aside ****/
   aside: {
     backgroundColor: Colors.darkBlue,
@@ -105,5 +100,40 @@ export default StyleSheet.create({
     borderRadius: 58,
     marginVertical: 15,
     marginHorizontal: 100,
+  },
+  /**** Main ****/
+  main: {},
+  title: {
+    marginBottom: 8,
+    paddingBottom: 4,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.light,
+    fontSize: 14,
+    fontFamily: 'RubikBold',
+    fontWeight: 400,
+    textTransform: "uppercase",
+  },
+  subTitle: {
+    fontSize: 12,
+    marginBottom: 8,
+    paddingBottom: 4,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.light,
+    fontFamily: 'RubikBold',
+  },
+  text: {
+    margin: 12,
+    fontSize: 14,
+    textAlign: 'justify',
+    fontFamily: 'Times-Roman'
+  },
+  pageNumber: {
+    position: 'absolute',
+    fontSize: 12,
+    bottom: 30,
+    left: 0,
+    right: 0,
+    textAlign: 'center',
+    color: 'grey',
   },
 });

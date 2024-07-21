@@ -2,6 +2,9 @@ export default {
   flex: {
     display: "flex",
   },
+  flexRow: {
+    flexDirection: "row",
+  },
   flexCenter: {
     alignItems: "center",
     justifyContent: "center",
