@@ -16,17 +16,28 @@ Font.register({
   src: 'https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFUkU1Z4Y.woff2'
 });
 
-Font.register({
-  family: 'Material Symbols Outlined',
-  src: 'https://fonts.gstatic.com/s/materialsymbolsoutlined/v195/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2'
-});
-
 const Colors = {
   main: "#384347",
   blue: "#008cff",
   darkBlue: "#22405C",
   darkBlue2: "#182D40",
   light: "#bdbdbd",
+}
+
+const Typography = {
+  h1: {
+    fontSize: 18,
+    fontFamily: 'RubikBold',
+  },
+  position: {
+    fontSize: 11,
+    color: Colors.blue,
+  },
+  contacts: {
+    fontFamily: 'Rubik',
+    fontSize: 8,
+    color: Colors.main,
+  }
 }
 
 
@@ -46,7 +57,7 @@ export default StyleSheet.create({
     height: "100%",
   },
   cv: {
-    padding: "30",
+    padding: "23 28",
     width: "65%",
     flex: "0 0 65%",
     backgroundColor: "white",
@@ -56,14 +67,13 @@ export default StyleSheet.create({
     marginBottom: 24,
   },
   name: {
-    fontSize: 24,
-    fontFamily: 'RubikBold',
+    ...Typography.h1,
     textAlign: 'left',
+    marginBottom: 2,
   },
   position: {
-    fontSize: 13,
+    ...Typography.position,
     textAlign: 'left',
-    color: Colors.blue,
     marginBottom: 5,
   },
   contacts: {
@@ -81,10 +91,7 @@ export default StyleSheet.create({
     marginRight: 2,
   },
   contactText: {
-    fontFamily: 'Rubik',
-    // fontWeight: 400,
-    fontSize: 9,
-    color: Colors.main,
+    ...Typography.contacts,
     textDecoration: "none",
   },
   /**** Aside ****/
@@ -95,14 +102,17 @@ export default StyleSheet.create({
     borderTop: "10px solid " + Colors.darkBlue2,
   },
   avatar: {
-    width: 116,
-    height: 116,
-    borderRadius: 58,
+    width: 80,
+    height: 80,
+    borderRadius: 40,
     marginVertical: 15,
     marginHorizontal: 100,
   },
   /**** Main ****/
   main: {},
+  main__block: {
+    marginBottom: 10,
+  },
   title: {
     marginBottom: 8,
     paddingBottom: 4,

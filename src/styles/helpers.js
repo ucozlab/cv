@@ -9,6 +9,11 @@ export default {
     alignItems: "center",
     justifyContent: "center",
   },
+  flexBetween: {
+    width: "100%",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
   textLeft: {
     textAlign: "left",
   },
