@@ -9,7 +9,7 @@ const Aside = () => {
       <View style={[styles.flex, styles.flexCenter]}>
         <Image
           style={styles.avatar}
-          src="../images/ava_card.jpg"
+          src="https://ucozlab.github.io/cv/images/ava_card.jpg"
         />
       </View>
     </View>

@@ -10,6 +10,7 @@ const Main = () => {
     <View style={styles.cv}>
       <Header/>
       <View style={styles.main}>
+        <Text style={{color: "red", textAlign: "center", marginBottom: 5}}>Under Construction</Text>
         <Text style={styles.title}>Profile Summary</Text>
         <Text style={styles.text}>
           Highly skilled frontend developer with over 10 years of experience in web development.

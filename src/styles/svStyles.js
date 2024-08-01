@@ -13,7 +13,7 @@ Font.register({
 
 Font.register({
   family: 'Rubik',
-  src: 'https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFUkU1Z4Y.woff2'
+  src: 'https://ucozlab.github.io/cv/fonts/Rubik-Regular.ttf'
 });
 
 const Colors = {
@@ -69,12 +69,12 @@ export default StyleSheet.create({
   name: {
     ...Typography.h1,
     textAlign: 'left',
-    marginBottom: 2,
+    marginBottom: 2.5,
   },
   position: {
     ...Typography.position,
     textAlign: 'left',
-    marginBottom: 5,
+    marginBottom: 6,
   },
   contacts: {
   },
@@ -85,8 +85,8 @@ export default StyleSheet.create({
     marginRight: 0,
   },
   contactIcon: {
-    width: 14,
-    height: 14,
+    width: 12,
+    height: 12,
     display: "flex",
     marginRight: 2,
   },
