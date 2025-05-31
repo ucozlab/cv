@@ -1,7 +1,7 @@
 import React from "react";
 
 import {Svg, Path} from "@react-pdf/renderer";
-import styles from "../styles/svStyles";
+import styles from "../styles/main";
 
 export default {
   PhoneIcon: (

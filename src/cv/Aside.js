@@ -1,7 +1,7 @@
 import React from "react";
 import {View, Text, Image, Link} from "@react-pdf/renderer";
 
-import styles from "../styles/svStyles";
+import styles from "../styles/main";
 
 const Aside = () => {
   return (

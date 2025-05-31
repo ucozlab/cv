@@ -2,6 +2,9 @@ export default {
   flex: {
     display: "flex",
   },
+  flex1: {
+    flex: 1,
+  },
   flexRow: {
     flexDirection: "row",
   },
@@ -11,7 +14,7 @@ export default {
   },
   flexBetween: {
     width: "100%",
-    alignItems: "center",
+    flexDirection: "row",
     justifyContent: "space-between",
   },
   textLeft: {
@@ -22,5 +25,11 @@ export default {
   },
   textRight: {
     textAlign: "right",
+  },
+  mb2: {
+    marginBottom: 2,
+  },
+  mb4: {
+    marginBottom: 4,
   },
 }
