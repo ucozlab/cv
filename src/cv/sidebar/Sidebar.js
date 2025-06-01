@@ -12,7 +12,7 @@ const Sidebar = () => {
       <View style={[styles.flex, styles.flexCenter]}>
         <Image
           style={styles.avatar}
-          src="https://ucozlab.github.io/cv/images/ava2.png"
+          src="https://ucozlab.github.io/cv/images/ava2.jpg"
         />
       </View>
       <Details/>
