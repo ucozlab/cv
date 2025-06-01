@@ -4,6 +4,7 @@ const colors = {
   darkBlue: "#22405C",
   darkBlue2: "#182D40",
   light: "#bdbdbd",
+  white: "#ffffff",
 };
 
 export const colorStyles = Object.keys(colors).reduce((acc, colorName) => {

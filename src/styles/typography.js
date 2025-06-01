@@ -1,15 +1,18 @@
 export default {
-  fontMontserrat: {
-    fontFamily: 'Montserrat',
-  },
-  fontMontserratMedium: {
-    fontFamily: 'MontserratSemiBold',
+  fontRubikSemiBold: {
+    fontFamily: 'RubikSemiBold',
   },
   fontRubik: {
     fontFamily: 'Rubik',
   },
+  fontMontserrat: {
+    fontFamily: 'Montserrat',
+  },
+  fontMontserratSemiBold: {
+    fontFamily: 'RubikSemiBold',
+  },
   body: {
-    fontFamily: 'Inter',
+    fontFamily: 'Rubik',
     fontSize: 10,
     fontWeight: 400,
   },
@@ -18,8 +21,8 @@ export default {
     fontFamily: 'MontserratSemiBold',
   },
   h2: {
-    fontSize: 12,
     fontFamily: 'Montserrat',
+    fontSize: 12,
     fontWeight: 400,
     textTransform: "uppercase",
   },

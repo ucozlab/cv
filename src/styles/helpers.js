@@ -29,7 +29,4 @@ export default {
   mb2: {
     marginBottom: 2,
   },
-  mb4: {
-    marginBottom: 4,
-  },
 }

@@ -18,10 +18,11 @@ export default StyleSheet.create({
     height: "100%",
   },
   cv: {
-    padding: "23 28",
+    padding: "23 27",
     width: "65%",
     flex: "0 0 65%",
     backgroundColor: "white",
+    justifyContent: "space-between",
   },
   /**** Header ****/
   header: {
@@ -57,24 +58,29 @@ export default StyleSheet.create({
   },
   /**** Aside ****/
   aside: {
+    color: colors.white,
     backgroundColor: colors.darkBlue,
+    paddingHorizontal: 27,
     width: "35%",
     flex: "0 0 35%",
-    borderTopWidth: "10px",
-    borderTopStyle: "solid",
-    borderTopColor: colors.darkBlue2,
+    // borderTopWidth: "10px",
+    // borderTopStyle: "solid",
+    // borderTopColor: colors.darkBlue2,
   },
   avatar: {
     width: 80,
     height: 80,
     borderRadius: 40,
-    marginVertical: 15,
+    marginVertical: 12.5,
     marginHorizontal: 100,
   },
   /**** Main ****/
   main: {},
   main__block: {
     marginBottom: 10,
+  },
+  main__content: {
+    paddingLeft: 12,
   },
   title: {
     marginBottom: 8,
@@ -91,4 +97,20 @@ export default StyleSheet.create({
     textAlign: 'center',
     color: 'grey',
   },
+  period: {
+    fontSize: 9,
+  },
+  job: {
+    paddingVertical: 3,
+    borderBottomWidth: 1,
+    borderBottomStyle: "dashed",
+    borderBottomColor: colors.light,
+  },
+  aside__block: {
+    marginBottom: 24,
+  },
+  copyright: {
+   color: colors.light,
+   fontSize: 8,
+  }
 });
