@@ -5,8 +5,6 @@ import styles from "../styles/main";
 import Sidebar from "./sidebar/Sidebar";
 import Main from "./main/Main";
 
-console.log("styles", styles);
-
 const CV = () => {
   return (
     <PDFViewer>
