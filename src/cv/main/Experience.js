@@ -19,7 +19,7 @@ const jobs = [
   },
   {
     position: "Frontend Developer",
-    company: "Accellabs — Kyiv, Ukraine",
+    company: "Accellabs",
     period: "Jan 2017 – Oct 2019",
     location: "Kyiv, Ukraine"
   },

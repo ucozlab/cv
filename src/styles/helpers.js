@@ -29,4 +29,7 @@ export default {
   mb2: {
     marginBottom: 2,
   },
+  pr10: {
+    paddingRight: 10,
+  }
 }

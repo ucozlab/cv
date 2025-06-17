@@ -6,7 +6,7 @@ import ExperienceView from "./ExperienceView";
 
 const education = [
   {
-    position: "BA in Information Technologies and Systems",
+    position: "Masters Degree in Information Technologies and Systems",
     company: "Cherkasy State Technological University",
     period: "Sep 2003 – May 2008",
     location: "Cherkasy, Ukraine"

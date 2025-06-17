@@ -11,7 +11,7 @@ const ExperienceView = (props) => {
   return (
     <View style={mainClasses}>
       <View style={[styles.flex, styles.flexBetween]}>
-        <View style={[styles.flex1]}>
+        <View style={[styles.flex1, styles.pr10]}>
           <Text style={styles.subTitle}>{job.position}</Text>
         </View>
         <View style={styles.textRight}>
@@ -19,7 +19,7 @@ const ExperienceView = (props) => {
         </View>
       </View>
       <View style={[styles.flex, styles.flexBetween]}>
-        <View style={[styles.flex1]}>
+        <View style={[styles.flex1, styles.pr10]}>
           <Text style={styles.color_blue}>{job.company}</Text>
         </View>
         <View style={styles.textRight}>
