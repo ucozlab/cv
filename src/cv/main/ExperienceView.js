@@ -22,9 +22,9 @@ const ExperienceView = (props) => {
         <View style={[styles.flex1, styles.pr10]}>
           <Text style={styles.color_blue}>{job.company}</Text>
         </View>
-        <View style={styles.textRight}>
-          <Text style={styles.period}>{job.location}</Text>
-        </View>
+        {/*<View style={styles.textRight}>*/}
+        {/*  <Text style={styles.period}>{job.location}</Text>*/}
+        {/*</View>*/}
       </View>
     </View>
   )

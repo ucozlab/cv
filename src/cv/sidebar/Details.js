@@ -8,7 +8,7 @@ const Details = () => {
     <View style={[styles.aside__block]}>
       <Text style={[styles.title, styles.h2, styles.border_white]}>Strengths</Text>
       <View>
-        <Text>Accuracy, Punctuality, Attention to Detail, Team Communication</Text>
+        <Text>Accuracy, Punctuality, Attention to Details, Team Communication</Text>
       </View>
     </View>
   )

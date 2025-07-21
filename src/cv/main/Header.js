@@ -20,7 +20,7 @@ const Header = () => {
         </View>
         <View style={[styles.flex, styles.flexCenter, styles.flexRow, styles.contactLast]}>
           {Icons.AddressIcon}
-          <Text style={[styles.contactText, styles.color_main, styles.fontRubik]}>Vietnam, Phu Quoc (temp)</Text>
+          <Text style={[styles.contactText, styles.color_main, styles.fontRubik]}>Bali, Indonesia (temp)</Text>
         </View>
       </View>
     </View>
