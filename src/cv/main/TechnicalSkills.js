@@ -4,12 +4,12 @@ import {View, Text} from "@react-pdf/renderer";
 import styles from "../../styles/main";
 
 const techs = [
-  {title: "Languages & Frameworks", text: "JavaScript (ES6+), TypeScript, React, React-Redux, HTML5, CSS3"},
-  {title: "Web Technologies", text: "REST, Service Workers, Web Workers, Canvas, SVG, Progressive Web Apps"},
-  {title: "Styling & UI", text: "SCSS, Tailwind CSS, Responsive Design, Cross-browser Compatibility"},
-  {title: "Libraries & Tools", text: "Figma, Zeplin, Adobe XD, Webpack, Gulp, Babel, NPM/Yarn,"},
-  {title: "Basic Backend Exposure", text: "Node.js (basic REST API development), C# & PHP (syntax & small fixes)"},
-  {title: "Testing & QA", text: "Jest, Mocha, React Testing Library"},
+  {title: "Languages & Frameworks", text: "JavaScript (ES2015+), TypeScript, React Ecosystem, HTML5, CSS3"},
+  {title: "Basic Backend Exposure", text: "Node.js, Express, MongoDB, C# & PHP (syntax & small fixes)"},
+  {title: "Web Technologies", text: "Docker, CI/CD, REST, Service Workers, Web Workers, Canvas, SVG, PWA"},
+  {title: "Styling & UI", text: "SCSS, Tailwind CSS, BEM, Responsive, Flex/Grid Layouts, CSS Animations, CSS Preprocessors"},
+  {title: "Libraries & Tools", text: "Figma, Zeplin, Adobe XD, Webpack, Gulp, Babel, NPM/Yarn/Bun"},
+  {title: "Testing & QA", text: "Jest, Mocha, React Testing Library, Browserstack"},
   {title: "Version Control & Workflow", text: "Git, Jira, Redmine, Trello, Agile Methodology"},
 ]
 

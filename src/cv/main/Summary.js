@@ -11,8 +11,8 @@ const Summary = () => {
         <Text>
           Experienced Frontend Developer with over 10 years of hands-on experience in developing and optimizing
           interactive, user-friendly, and feature-rich web applications. Adept at working with modern JavaScript
-          technologies including React, SCSS, Tailwind, Canvas/SVG, and various design tools (Figma, Adobe XD). Strong
-          collaborator with a sharp eye for UI detail, capable of delivering high-quality solutions with clean,
+          technologies, including React, SCSS, Tailwind CSS, Canvas/SVG, and various design tools (Figma, Adobe XD).
+          Strong collaborator with a sharp eye for UI detail, capable of delivering high-quality solutions with clean,
           maintainable code. Open to relocation opportunities.
         </Text>
       </View>
